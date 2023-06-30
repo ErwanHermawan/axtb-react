@@ -1,0 +1,60 @@
+@import "core/style/_asset.scss";
+
+.header {
+	background-color: color(white);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding: 24px 0;
+	z-index: 9;
+	&Wrapper {
+		position: relative;
+	}
+	&Logo {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		&Img {
+			display: block;
+			height: 40px;
+		}
+	}
+	&Nav {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		&Item {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 24px;
+		}
+		&Link {
+			text-decoration: none;
+			transition: all 0.3s ease;
+			&:hover,
+			&Active {
+				color: color(black, 1);
+			}
+			&Active {
+				font-weight: bold;
+			}
+		}
+	}
+	&Hastag {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		&Text {
+			margin: 0;
+			padding: 6px 8px;
+			background-color: color(black, 1);
+			color: color(white);
+			font-size: 14px;
+			line-height: 1.2;
+			font-weight: bold;
+		}
+	}
+}

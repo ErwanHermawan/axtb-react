@@ -1,0 +1,29 @@
+@import "core/style/_asset.scss";
+
+.section {
+	padding: 72px 0;
+}
+
+.title {
+	@include font-size(48);
+	font-weight: fw(bold);
+	color: color(black, 1);
+	margin-bottom: 24px;
+}
+
+.error {
+	@include font-size(16);
+	font-weight: fw(regular);
+	color: color(white);
+}
+
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -8px;
+}
+
+.item {
+	width: 20%;
+	padding: 8px;
+}

@@ -1,0 +1,156 @@
+@import "core/style/_asset.scss";
+
+.footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background-color: color(black, 1);
+	padding: 64px 0 128px;
+	&Subscriber {
+		padding-bottom: 48px;
+		border-bottom: solid 1px color(black, 3);
+		// font-size: 0;
+		&Text,
+		&Form {
+			display: inline-block;
+			vertical-align: middle;
+			width: 50%;
+		}
+		&Title {
+			color: color(white);
+			margin-bottom: 8px;
+		}
+		&Desc {
+			color: color(grey, 2);
+			margin-bottom: 0;
+			max-width: 444px;
+		}
+		&Form {
+			text-align: right;
+		}
+		&Input {
+			padding: 14px 16px;
+			width: 336px;
+			margin-right: 8px;
+		}
+		&Button {
+			outline: 0;
+			border: 0;
+			padding: 16px 24px;
+			background-color: color(black, 3);
+			color: color(white);
+		}
+	}
+	&Content {
+		margin: 48px 0 32px;
+		@include clearfix();
+	}
+	&About {
+		float: left;
+		width: 40%;
+	}
+	&Logo {
+		display: block;
+		height: 64px;
+		width: auto;
+		margin-bottom: 32px;
+		&Img {
+			display: block;
+		}
+	}
+	&Desc {
+		max-width: 370px;
+		margin-bottom: 0;
+		span {
+			font-weight: bold;
+		}
+	}
+	&Nav {
+		float: right;
+		width: 60%;
+		padding-left: 56px;
+		@include clearfix();
+		&List {
+			float: left;
+			width: 28%;
+			&:nth-child(2) {
+				padding-left: 24px;
+			}
+			&:last-child {
+				width: 44%;
+			}
+		}
+		&Title {
+			font-size: 20px;
+			line-height: 1.2;
+			color: color(white);
+			margin-bottom: 16px;
+		}
+		&Menu {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		&Item {
+			display: block;
+			margin-bottom: 8px;
+		}
+		&Link {
+			text-decoration: none;
+			transition: all 0.3s ease;
+			&:hover {
+				color: color(white);
+			}
+		}
+		&OpenHour {
+			color: color(white);
+		}
+	}
+	&Sosmed {
+		font-size: 0;
+		&Title,
+		&Item {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		&Title {
+			margin-bottom: 0;
+			margin-right: 20px;
+		}
+
+		&Item {
+			display: inline-block;
+			margin-right: 16px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	&Bottom {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: #1a1a1a;
+		padding: 20px 0;
+		@include clearfix();
+	}
+
+	&Design {
+		float: left;
+		font-size: 14px;
+		margin-bottom: 0;
+		span {
+			font-weight: bold;
+			color: color(white);
+		}
+	}
+
+	&CopyRight {
+		float: right;
+		font-size: 14px;
+		margin-bottom: 0;
+	}
+}

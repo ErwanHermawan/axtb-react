@@ -1,0 +1,23 @@
+@import "core/style/_asset.scss";
+
+.card {
+	padding: 16px;
+	border-radius: 16px;
+	background-color: color(white);
+	@include shadow(16);
+}
+
+.name {
+	@include font-size(16);
+	font-weight: fw(400);
+	color: color(black, 1);
+	margin-bottom: 8px;
+}
+
+.email,
+.website,
+.company {
+	@include font-size(14);
+	color: color(grey, 0);
+	margin-bottom: 0;
+}
